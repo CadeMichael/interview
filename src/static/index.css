@@ -1,0 +1,82 @@
+/* Essentially Global Style */
+body {
+    font-family: Mina, serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+nav {
+    display: flex;
+    background-color: #09b1e8;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.nav-title {
+    color: black;
+}
+
+.nav-img {
+    margin-left: auto;
+    width: 28px;
+}
+/*----------------*/
+
+/* Searchbar Styling */
+#product-search {
+    display: flex;
+    font-family: Mina, serif;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 98%;
+}
+/*-------------------*/
+
+/* Title */
+h2 {
+    padding-left: 1%;
+}
+/*-------*/
+
+/* Product Grid Styling */
+.product-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+}
+
+#product-grid {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* small screens */
+    justify-content: center;
+    margin: auto;
+    width: 75%;
+}
+@media screen and (min-width: 600px) {
+    #product-grid {
+        grid-template-columns: repeat(3, 1fr); /* large screens */
+    }
+}
+/*-----------------------*/
+
+/* Individual Product Styling */
+.product {
+    margin: auto;
+}
+.product-image {
+    width: 200px;
+    max-height: 200px;
+}
+.product-price {
+    margin-top: -15;
+}
+/*----------------------------*/
